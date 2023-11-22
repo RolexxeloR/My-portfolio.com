@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap'); 
+
+:root{
+    --primary-color:#f95a47;
+    --text-dark: #0f172a;
+    --text-light:#64748b;
+    --white:#ffff;
+    --max-width:1200px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.section__container{
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+}
+.section__header{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    text-align: center;
+}
+.btn{
+    padding: 1rem 1.5rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    white-space: nowrap;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 10px 20px #f9594751;
+}
+img{
+    width: 100%;
+    display: flex;
+}
+a {
+    text-decoration: none;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+header{
+    position: relative;
+}
+header::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: calc(50% - 1.5rem);
+    background-color: #c7ffff;
+    z-index: -1;
+}
+nav{
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav__logo a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    cursor: pointer;
+}
+.nav__links{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.link a{
+    padding: 5px 0;
+    font-weight: 700;
+    color: var(--text-dark);
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+.link a:hover{
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.header__container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    align-items: center;
+}
+.section__content h4{
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+.header__content h1{
+    margin-bottom: 2rem;
+    font-size: 3.75rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+.header__content p{
+    margin-bottom: 2rem;
+    color: var(--text-light);
+}
+.header__content input{
+    width:100%;
+    padding: 0 1rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+}
+.header__image{
+    position: relative;
+    padding-right: 2rem;
+}
+.header__socials {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.header__socials a{
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.header__socials a:hover{
+    color: var(--primary-color);
+}
+.header__image img{
+    max-width: 500px;
+    margin: auto;
+}
+    body{
+        width: 100%;
+        background-color: #ffffff;
+    }
+    .title h1{
+        text-align: center;
+        padding-top: 50px;
+        font-size: 42px;
+    }
+    .title h1::after{
+        content: "";
+        height: 4px;
+        width: 230px;
+        background-color: #000;
+        display: block;
+        margin: auto;
+    }
+    .services{
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 75px auto;
+        text-align: center;
+    }
+    .card{
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 20px;
+        padding: 20px 20px;
+        background-color: #efefef;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .card:hover{
+        background-color: #b8d4de;
+        transition: 0.4s ease;
+    }
+    .card .icon{
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+    .card h2{
+        font-size: 28px;
+        color: #c94f4f;
+        margin-bottom: 20px;
+    }
+    .card p{
+        font-size: 17px;
+        margin-bottom: 30px;
+        line-height: 1.5;
+        color: #5e5e5e;
+    }
+    .button{
+        font-size: 15px;
+        text-decoration: none;
+        color: #fff;
+        background-color: #2c677c;
+        padding: 8px 12px;
+        border-radius: 5px;
+        letter-spacing: 1px;
+    }
+    .button:hover{
+        background-color: #c94f4f;
+        transition: 0.4s ease;
+    }
+    .footer__container{
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    gap: 2rem;
+}
+.footer__col h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+.footer__col p {
+    margin-bottom: 1rem;
+    color:var(--text-light);
+}
+.footer__col h4{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+.footer__col a{
+    display: block;
+    margin-bottom: 1rem;
+    color: var(--text-light);
+    cursor: pointer;
+    transition: .3s;
+}
+.footer__col a:hover{
+    color: var(--primary-color);
+}
+.footer__col p span{
+    margin-right: .5rem;
+    color: var(--primary-color);
+}
+.footer__bar{
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem;
+    font-size: .8rem;
+    color: var(--text-dark);
+}
+.dark{
+    background-color: black;
+    color: white;
+}
+.light{
+    background-color: white;
+    color: black;
+}
+.qwert{
+    width: 50px;
+    height: 50px;
+}
+.wor{
+    display: flex;
+    flex-direction: column;
+}
+    @media screen and (max-width: 940px){
+        .services{
+            display: flex;
+            flex-direction: column;
+        }
+        .card{
+            width: 85%;
+            display: flex;
+            margin: 20px 0px;
+        }
+    }
+    @media (width < 900px){
+    header::after{
+        content: none;
+    }
+    .nav__links{
+        gap: 1rem;
+    }
+    .header__container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .header__content{
+        text-align: center;
+    }
+    .header__content form{
+        margin: auto;
+    }
+    .header__image{
+        grid-area: 1/2/2/2;
+    }
+}
+@media (width < 600px){
+    .nav__links{
+        display: none;
+    }
+    .footer__bar{
+        text-align: center;
+    }
+}
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="nav__logo"><a href="#">SMART HOMES</a></div>
+            <ul class="nav__links">
+                <li class="link"><a href="index.html">Home</a></li>
+                <li class="link"><a href="About Us.html">About us</a></li>
+                <li class="link"><a href="Properties.html">Properties</a></li>
+                <li class="link"><a href="services.html">Services</a></li>
+                <li class="link"><a href="career.html">Career</a></li>
+                <li class="link"><a href="#">Contact us </a></li>
+            </ul> 
+        </nav>
+        <div class="section__container header__container">
+            <div class="header__content">
+                <h4>RESIDENTIAL SPACES</h4>
+                <h1>Smart Living Spaces for Smart People</h1>
+                <p>
+                    This lifestyle encompasses the integration of smart devices,
+                    automation, and data-driven solutions into various aspects of daily 
+                    life, including homes, transportation, energy consumption, and 
+                    healthcare.
+                </p>
+            </div>
+            <div class="header__image">
+                <img src="assets/house 4.jpg" alt="house 1" />
+                <div class="header__socials">
+                    <a href="#"><i class="ri-facebook-fill"></i></a>
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                    <a href="#"><i class="ri-youtube-fill"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="section">
+        <div class="title">
+            <h1>Our Services</h1>
+        </div>
+        <div class="services">
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-calendar"></i>
+                </div>
+                <h2>Planning</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.Architecto, dolore eveniet voluptatibus sit quam facere dolor
+                    distinctio totam ullam vero, quisquam reprehenderit aspernatur hic deleniti commodi. Iure laborio
+                </p>
+                <a href="" class="button">Read More</a>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-wrench"></i>
+                </div>
+                <h2>Renovation</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.Architecto, dolore eveniet voluptatibus sit quam facere dolor
+                    distinctio totam ullam vero, quisquam reprehenderit aspernatur hic deleniti commodi. Iure laborio
+                </p>
+                <a href="" class="button">Read More</a>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <h2>support</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.Architecto, dolore eveniet voluptatibus sit quam facere dolor
+                    distinctio totam ullam vero, quisquam reprehenderit aspernatur hic deleniti commodi. Iure laborio
+                </p>
+                <a href="" class="button">Read More</a>
+            </div>
+        </div>
+    </div>
+    <footer class="section__container footer__container">
+        <div class="footer__col">
+            <h3>SmartSpace</h3>
+            <p>
+                <span><i class="ri-mail-fill"></i></span> quwiyyafolabi10@gmail.com
+            </p>
+            <p>
+                <span><i class="ri-phone-fill"></i></span> 09122427827
+            </p>
+        </div>
+        <div class="footer__col">
+            <h4>Others</h4>
+            <a href="index.html">Home</a>
+            <a href="Properties.html">Properties</a>
+            <a href="services.html">Services</a>
+            <a href="career.html">Career</a>
+        </div>
+        <div class="footer__col">
+            <h4>Others</h4>
+            <a href="">Contact us</a>
+            <a href="About Us.html">About Us</a>
+            <a href="">BACK TO TOP LINK</a>
+        </div>
+        <div class="wor">
+            <button ondblclick="darkMode()" class="qwert"><i class="ri-contrast-2-fill"></i></button>
+            <button ondblclick="lightMode()" class="qwert"><i class="ri-contrast-2-line"></i></button>
+            </div>
+    </footer>
+    <div class="footer__bar">
+        Copyright @ 2023 Smart Homes. All rights reserved
+    </div>
+    <script>
+        function darkMode(){
+    let body = document.body;
+    body.setAttribute('class', 'dark')
+}
+function lightMode(){
+    let body = document. body;
+    body.setAttribute('class', 'light')
+}
+    </script>
+</body>
+</html>
